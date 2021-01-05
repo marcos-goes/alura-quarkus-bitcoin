@@ -1,6 +1,5 @@
 package br.com.alura.model;
 
-<<<<<<< HEAD
 import io.quarkus.elytron.security.common.BcryptUtil;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import io.quarkus.security.jpa.Password;
@@ -11,12 +10,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.json.bind.annotation.JsonbTransient;
-=======
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
->>>>>>> bb09f0c86be65059967533178cc772867909359a
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,10 +17,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-<<<<<<< HEAD
 @UserDefinition
-=======
->>>>>>> bb09f0c86be65059967533178cc772867909359a
 public class Usuario extends PanacheEntityBase {
 
     @Id
@@ -39,7 +29,6 @@ public class Usuario extends PanacheEntityBase {
 
     private String cpf;
 
-<<<<<<< HEAD
     @Username
     private String username;
 
@@ -65,9 +54,4 @@ public class Usuario extends PanacheEntityBase {
             return "ADMIN";
         return "USER";
     }
-=======
-    private String username;
-
-    private String password;
->>>>>>> bb09f0c86be65059967533178cc772867909359a
 }
