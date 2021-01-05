@@ -90,6 +90,9 @@ CREATE TABLE `Ordem` (
 	`user_id` int NOT NULL,
 	PRIMARY KEY (`id`),
 	FOREIGN KEY (`user_id`) REFERENCES `Usuario` (`id`)) ENGINE=InnoDB;
+<<<<<<< HEAD
 
 ALTER TABLE `Usuario` ADD COLUMN role VARCHAR(255)
+=======
+>>>>>>> bb09f0c86be65059967533178cc772867909359a
 ```
